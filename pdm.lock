@@ -5,10 +5,10 @@
 groups = ["default", "dev"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:c11f5f831b069210767df1ca5ed12b01ae96afd12a77e3bbc99d30154a46a034"
+content_hash = "sha256:70cd003e1af79843160b44b97c5e34871fb0dfe8194c2c8b446642817b1261ee"
 
 [[metadata.targets]]
-requires_python = ">=3.10"
+requires_python = ">=3.12,<3.13"
 
 [[package]]
 name = "annotated-types"
@@ -406,6 +406,7 @@ version = "0.3.9"
 requires_python = ">=3.8"
 summary = "serialize all of Python"
 groups = ["dev"]
+marker = "python_version >= \"3.11\""
 files = [
     {file = "dill-0.3.9-py3-none-any.whl", hash = "sha256:468dff3b89520b474c0397703366b7b95eebe6303f108adf9b19da1f702be87a"},
     {file = "dill-0.3.9.tar.gz", hash = "sha256:81aa267dddf68cbfe8029c42ca9ec6a4ab3b22371d1c450abc54422577b4512c"},
@@ -541,18 +542,6 @@ dependencies = [
 files = [
     {file = "drf_spectacular-0.28.0-py3-none-any.whl", hash = "sha256:856e7edf1056e49a4245e87a61e8da4baff46c83dbc25be1da2df77f354c7cb4"},
     {file = "drf_spectacular-0.28.0.tar.gz", hash = "sha256:2c778a47a40ab2f5078a7c42e82baba07397bb35b074ae4680721b2805943061"},
-]
-
-[[package]]
-name = "exceptiongroup"
-version = "1.2.2"
-requires_python = ">=3.7"
-summary = "Backport of PEP 654 (exception groups)"
-groups = ["dev"]
-marker = "python_version < \"3.11\""
-files = [
-    {file = "exceptiongroup-1.2.2-py3-none-any.whl", hash = "sha256:3111b9d131c238bec2f8f516e123e14ba243563fb135d3fe885990585aa7795b"},
-    {file = "exceptiongroup-1.2.2.tar.gz", hash = "sha256:47c2edf7c6738fafb49fd34290706d1a1a2f4d1c6df275526b62cbb4aa5393cc"},
 ]
 
 [[package]]
@@ -1452,18 +1441,6 @@ files = [
 ]
 
 [[package]]
-name = "tomli"
-version = "2.0.2"
-requires_python = ">=3.8"
-summary = "A lil' TOML parser"
-groups = ["dev"]
-marker = "python_version < \"3.11\""
-files = [
-    {file = "tomli-2.0.2-py3-none-any.whl", hash = "sha256:2ebe24485c53d303f690b0ec092806a085f07af5a5aa1464f3931eec36caaa38"},
-    {file = "tomli-2.0.2.tar.gz", hash = "sha256:d46d457a85337051c36524bc5349dd91b1877838e2979ac5ced3e710ed8a60ed"},
-]
-
-[[package]]
 name = "tomlkit"
 version = "0.13.2"
 requires_python = ">=3.8"
@@ -1490,7 +1467,7 @@ name = "typing-extensions"
 version = "4.12.2"
 requires_python = ">=3.8"
 summary = "Backported and Experimental Type Hints for Python 3.8+"
-groups = ["default", "dev"]
+groups = ["default"]
 files = [
     {file = "typing_extensions-4.12.2-py3-none-any.whl", hash = "sha256:04e5ca0351e0f3f85c6853954072df659d0d13fac324d0072316b67d7794700d"},
     {file = "typing_extensions-4.12.2.tar.gz", hash = "sha256:1a7ead55c7e559dd4dee8856e3a88b41225abfe1ce8df57b7c13915fe121ffb8"},
